@@ -7,7 +7,7 @@ data = df['wind_kmh'].dropna()
 
 # Настройка холста (1 строка, 2 колонки)
 sns.set_theme(style="whitegrid") #Here i make for him theme white 
-fig, axes = plt.subplots(1, 2, figsize=(12, 5)) # 1 stroke and 2 colomn 
+fig, axes = plt.subplots(1, 2, figsize=(12, 5)) # 1 stroke and 2 colomn
 
 # График 1: Гистограмма (показывает форму распределения)
 sns.histplot(data, kde=True, ax=axes[0], color='#3498db', alpha=0.6)
@@ -22,3 +22,6 @@ axes[1].set_title('Boxplot: IQR and Outliers')
 
 plt.tight_layout()
 plt.show()
+
+
+
