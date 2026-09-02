@@ -4,20 +4,38 @@ This section outlines the descriptive statistics calculated for the `wind_kmh` f
 
 ### Metrics & Mathematical Definitions
 
-*   **Mean**: The arithmetic average of the dataset. Sensitive to extreme outliers.
-    $$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i $$
+* **Mean**: The arithmetic average of the dataset. Sensitive to extreme outliers.
 
-*   **Median**: The middle value of the sorted dataset. A robust estimator of the center.
-    $$ \tilde{x} = x_{\frac{n+1}{2}} $$
+  $$
+  \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
+  $$
 
-*   **Sample Variance**: The average squared deviation from the mean, utilizing Bessel's correction ($n-1$) for unbiased sample estimation.
-    $$ s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 $$
+* **Median**: The middle value of the sorted dataset. A robust estimator of the center.
 
-*   **Standard Deviation (SD)**: The square root of the variance, expressing dispersion in the original units ($km/h$).
-    $$ s = \sqrt{s^2} $$
+  $$
+  \tilde{x} = x_{\frac{n+1}{2}}
+  $$
 
-*   **Range**: The absolute difference between the maximum and minimum observations.
-    $$ R = \max(x) - \min(x) $$
+* **Sample Variance**: The average squared deviation from the mean, utilizing Bessel's correction ($n - 1$) for unbiased sample estimation.
 
-*   **Interquartile Range (IQR)**: The spread of the central 50% of the data. It is a robust measure of variability, unaffected by outlier gusts.
-    $$ IQR = Q_3 - Q_1 $$
+  $$
+  s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+  $$
+
+* **Standard Deviation (SD)**: The square root of the variance, expressing dispersion in the original units ($\text{km/h}$).
+
+  $$
+  s = \sqrt{s^2}
+  $$
+
+* **Range**: The absolute difference between the maximum and minimum observations.
+
+  $$
+  R = \max(x) - \min(x)
+  $$
+
+* **Interquartile Range (IQR)**: The spread of the central 50% of the data. It is a robust measure of variability, unaffected by outlier gusts.
+
+  $$
+  \text{IQR} = Q_3 - Q_1
+  $$
