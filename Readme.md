@@ -21,3 +21,9 @@ This section outlines the descriptive statistics calculated for the `wind_kmh` f
 
 * **Interquartile Range (IQR)**: The spread of the central 50% of the data. It is a robust measure of variability, unaffected by outlier gusts.  
   $\displaystyle \text{IQR} = Q_3 - Q_1$
+
+---
+
+### Visualization
+
+![Wind Speed Distribution](image.png)
